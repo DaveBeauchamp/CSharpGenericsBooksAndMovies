@@ -1,0 +1,9 @@
+﻿CREATE TABLE IF NOT EXISTS books (bookId INTEGER PRIMARY KEY AUTOINCREMENT,
+								  bookTitle TEXT NOT NULL,
+								  bookGenre TEXT NOT NULL,
+								  pageCount INTEGER NOT NULL,
+
+CREATE TABLE IF NOT EXISTS movies (movieId INTEGER PRIMARY KEY AUTOINCREMENT,
+								   movieTitle TEXT NOT NULL,
+								   movieGenre TEXT NOT NULL,
+								   runTime TEXT NOT NULL,
