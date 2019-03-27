@@ -12,44 +12,49 @@
 <body>
     <form id="form1" runat="server">
         <div class="container-fluid">
-            <%--maybe grab bootstrap from another project to make a nicer UI--%>
             <h3>fix the row divs up to format nicer, Books one column movies the other</h3>
             <div style="float: left; width: 100%;">
                 <h1>Book and Movies basic generics example</h1>
+
                 <div class="row">
                     <div class="col-sm-4">
                         <h3>Book</h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Movie</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
                         <asp:Label runat="server">Book Title: </asp:Label>
                         <asp:TextBox runat="server" ID="txtBookTitle" />
                     </div>
-                    <br />
+                    <div class="col-sm-4">
+                        <asp:Label runat="server">Movie Title: </asp:Label>
+                        <asp:TextBox runat="server" ID="txtMovieTitle" />
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-4">
                         <asp:Label runat="server">Book Genre: </asp:Label>
                         <asp:TextBox runat="server" ID="txtBookGenre" />
                     </div>
-                    <br />
-                    <div class="col-sm-4">
-                        <asp:Label runat="server">Total Pages: </asp:Label>
-                        <asp:TextBox runat="server" ID="txtPagesCount" />
-                    </div>
-                    <br />
-                    <div class="col-sm-4">
-                        <h3>Movie</h3>
-                        <asp:Label runat="server">Movie Title: </asp:Label>
-                        <asp:TextBox runat="server" ID="txtMovieTitle" />
-                    </div>
-                    <br />
                     <div class="col-sm-4">
                         <asp:Label runat="server">Movie Genre: </asp:Label>
                         <asp:TextBox runat="server" ID="txtMovieGenre" />
                     </div>
-                    <br />
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <asp:Label runat="server">Total Pages: </asp:Label>
+                        <asp:TextBox runat="server" ID="txtPagesCount" />
+                    </div>
                     <div class="col-sm-4">
                         <asp:Label runat="server">Run Time: </asp:Label>
                         <asp:TextBox runat="server" ID="txtRunTime" />
                     </div>
-                    <div class="col-sm-4">
-                    </div>
+                </div>
+                
 
                     <div class="col-sm-8">
                         <asp:Label runat="server">Book Grid:</asp:Label>

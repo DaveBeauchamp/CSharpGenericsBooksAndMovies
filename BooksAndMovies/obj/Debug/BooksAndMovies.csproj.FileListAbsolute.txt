@@ -123,3 +123,4 @@ C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\System.Data.SQLit
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\x64\SQLite.Interop.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\x86\SQLite.Interop.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\SQLite.Interop.dll
+C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\obj\Debug\BooksAndMovies.csprojAssemblyReference.cache

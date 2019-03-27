@@ -31,24 +31,6 @@ namespace BooksAndMovies {
         protected global::System.Web.UI.WebControls.TextBox txtBookTitle;
         
         /// <summary>
-        /// txtBookGenre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBookGenre;
-        
-        /// <summary>
-        /// txtPagesCount control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPagesCount;
-        
-        /// <summary>
         /// txtMovieTitle control.
         /// </summary>
         /// <remarks>
@@ -58,6 +40,15 @@ namespace BooksAndMovies {
         protected global::System.Web.UI.WebControls.TextBox txtMovieTitle;
         
         /// <summary>
+        /// txtBookGenre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBookGenre;
+        
+        /// <summary>
         /// txtMovieGenre control.
         /// </summary>
         /// <remarks>
@@ -65,6 +56,15 @@ namespace BooksAndMovies {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMovieGenre;
+        
+        /// <summary>
+        /// txtPagesCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPagesCount;
         
         /// <summary>
         /// txtRunTime control.

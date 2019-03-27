@@ -172,5 +172,24 @@ namespace BooksAndMovies
                 }
             }
         }
+
+        private string TypeHandler<T>(T mediaType)
+        {
+            string ret = "";
+
+            // type check the generic against the type
+            // use enum after type check 
+
+            if (true)
+            {
+                ret = Constants.Book;
+            }
+            else
+            {
+                ret = Constants.Movie;
+            }
+
+            return ret;
+        }
     }
 }
