@@ -107,8 +107,6 @@ C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\Dapper.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\EntityFramework.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\EntityFramework.SqlServer.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\System.Data.SQLite.EF6.dll
-C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\System.Data.SQLite.Linq.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\Dapper.xml
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\EntityFramework.xml
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\EntityFramework.SqlServer.xml
@@ -117,7 +115,6 @@ C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\obj\Debug\BooksAndMov
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\obj\Debug\BooksAndMovies.csproj.CopyComplete
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\obj\Debug\BooksAndMovies.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\obj\Debug\BooksAndMovies.pdb
-C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\System.Data.SQLite.dll
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\System.Data.SQLite.xml
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\System.Data.SQLite.dll.config
 C:\GitRepos\C#\CSharpGenericsBooksAndMovies\BooksAndMovies\bin\x64\SQLite.Interop.dll

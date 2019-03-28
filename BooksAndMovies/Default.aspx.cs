@@ -11,8 +11,8 @@ namespace BooksAndMovies
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // this won't work -- google this -- Using SQlite databases in UWP apps -- this should fix this
-            //Database.CreateDatabase();
+            //string connstring = Constants.ConnectionStringBuilder();
+            Database.CreateDatabase();
 
             // build the UI and make the click events and go from there. test later when you have the nuGet packages
 
