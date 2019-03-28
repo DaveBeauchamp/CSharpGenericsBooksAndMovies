@@ -12,78 +12,90 @@
 <body>
     <form id="form1" runat="server">
         <div class="container-fluid">
-            <h3>fix the row divs up to format nicer, Books one column movies the other</h3>
             <div style="float: left; width: 100%;">
                 <h1>Book and Movies basic generics example</h1>
 
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <h3>Book</h3>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <h3>Movie</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Book Title: </asp:Label>
                         <asp:TextBox runat="server" ID="txtBookTitle" />
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Movie Title: </asp:Label>
                         <asp:TextBox runat="server" ID="txtMovieTitle" />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Book Genre: </asp:Label>
                         <asp:TextBox runat="server" ID="txtBookGenre" />
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Movie Genre: </asp:Label>
                         <asp:TextBox runat="server" ID="txtMovieGenre" />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Total Pages: </asp:Label>
                         <asp:TextBox runat="server" ID="txtPagesCount" />
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Run Time: </asp:Label>
                         <asp:TextBox runat="server" ID="txtRunTime" />
                     </div>
                 </div>
-                
-
-                    <div class="col-sm-8">
+                <br />
+                <div class="row">
+                    <div class="col-sm-3">
                         <asp:Label runat="server">Book Grid:</asp:Label>
-                        <asp:Label runat="server">Movie Grid:</asp:Label>
                         <asp:GridView runat="server" ID="gvBooks"></asp:GridView>
+                    </div>
+                    <div class="col-sm-3">
+                        <asp:Label runat="server">Movie Grid:</asp:Label>
                         <asp:GridView runat="server" ID="gvMovies"></asp:GridView>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-8">
                         <h4>Add Books and Movies</h4>
                         <asp:Label runat="server">Book or Movie:</asp:Label>
-                        <asp:RadioButtonList ID="rdlBookOrMovie" runat="server" RepeatDirection="Horizontal" >
-                        <asp:ListItem value="book">Book &nbsp &nbsp&nbsp</asp:ListItem><asp:ListItem value="movie" >Movie</asp:ListItem>
-                    </asp:RadioButtonList>
-
-                        <asp:Label runat="server" >Title</asp:Label>
+                        <br />
+                        <asp:RadioButtonList ID="rdlBookOrMovie" runat="server" RepeatDirection="Horizontal">
+                            <asp:ListItem Value="book">Book &nbsp &nbsp&nbsp</asp:ListItem>
+                            <asp:ListItem Value="movie">Movie</asp:ListItem>
+                        </asp:RadioButtonList>
+                        <br />
+                        <asp:Label runat="server">Title</asp:Label>
                         <asp:TextBox runat="server" ID="txtTitle" />
-                        <asp:Label runat="server" >Genre</asp:Label>
+                        <asp:Label runat="server">Genre</asp:Label>
                         <asp:TextBox runat="server" ID="txtGenre" />
-                        <asp:Label runat="server" >Total Pages</asp:Label>
-                        <asp:Label runat="server" >Run Time</asp:Label>
+                        <asp:Label runat="server">Total Pages</asp:Label>
+                        <asp:Label runat="server">Run Time</asp:Label>
                         <asp:TextBox runat="server" ID="txtLengthOfMedia" />
-
                     </div>
-
-
+                </div>
+                <br />
+                <div class="row">
+                    <div style="margin-left: 10px">
+                        <h4>Navigation Buttons</h4>
+                        <asp:Button runat="server" ID="btnFirstRecord" Text="First" Width="80px" OnClick="btnFirstRecord_Click" />
+                        <asp:Button runat="server" ID="btnPreviousRecord" Text="Previous" Width="80px" OnClick="btnPreviousRecord_Click" />
+                        <asp:Button runat="server" ID="btnNextRecord" Text="Next" Width="80px" OnClick="btnNextRecord_Click" />
+                        <asp:Button runat="server" ID="btnLastRecord" Text="Last" Width="80px" OnClick="btnLastRecord_Click" />
+                    </div>
                 </div>
             </div>
-
         </div>
+
     </form>
 </body>
 </html>

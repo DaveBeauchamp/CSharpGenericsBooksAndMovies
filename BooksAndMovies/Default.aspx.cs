@@ -17,5 +17,25 @@ namespace BooksAndMovies
             // build the UI and make the click events and go from there. test later when you have the nuGet packages
 
         }
+
+        protected void btnFirstRecord_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnPreviousRecord_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnNextRecord_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnLastRecord_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
