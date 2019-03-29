@@ -65,26 +65,6 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-8">
-                        <h4>Add Books and Movies</h4>
-                        <asp:Label runat="server">Book or Movie:</asp:Label>
-                        <br />
-                        <asp:RadioButtonList ID="rdlBookOrMovie" runat="server" RepeatDirection="Horizontal">
-                            <asp:ListItem Value="book">Book &nbsp &nbsp&nbsp</asp:ListItem>
-                            <asp:ListItem Value="movie">Movie</asp:ListItem>
-                        </asp:RadioButtonList>
-                        <br />
-                        <asp:Label runat="server">Title</asp:Label>
-                        <asp:TextBox runat="server" ID="txtTitle" />
-                        <asp:Label runat="server">Genre</asp:Label>
-                        <asp:TextBox runat="server" ID="txtGenre" />
-                        <asp:Label runat="server">Total Pages</asp:Label>
-                        <asp:Label runat="server">Run Time</asp:Label>
-                        <asp:TextBox runat="server" ID="txtLengthOfMedia" />
-                    </div>
-                </div>
-                <br />
-                <div class="row">
                     <div style="margin-left: 10px">
                         <h4>Navigation Buttons</h4>
                         <asp:Button runat="server" ID="btnFirstRecord" Text="First" Width="80px" OnClick="btnFirstRecord_Click" />
@@ -93,6 +73,37 @@
                         <asp:Button runat="server" ID="btnLastRecord" Text="Last" Width="80px" OnClick="btnLastRecord_Click" />
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>Add Books and Movies</h4>
+                        <asp:Label runat="server">Book or Movie:</asp:Label>
+                        <br />
+                        <asp:RadioButton runat="server" GroupName="rdgBookOrMovie" ID="rdoBook" Text="Book" OnCheckedChanged="rdoBook_CheckedChanged" Checked="true" AutoPostBack="true"/>&nbsp
+                        <asp:RadioButton runat="server" GroupName="rdgBookOrMovie" ID="rdoMovie" Text="Movie" OnCheckedChanged="rdoMovie_CheckedChanged" AutoPostBack="true"/>
+                        <br />
+                        <asp:Label runat="server">Table Id</asp:Label>
+                        <asp:TextBox runat="server" ID="txtTableId" Text="0" />
+                        <asp:Label runat="server">Title</asp:Label>
+                        <asp:TextBox runat="server" ID="txtTitle" />
+                        <asp:Label runat="server">Genre</asp:Label>
+                        <asp:TextBox runat="server" ID="txtGenre" />
+                        <asp:Label runat="server" ID="lblPages">Total Pages</asp:Label>
+                        <asp:Label runat="server" ID="lblRunTime" Visible="false">Run Time</asp:Label>
+                        <asp:TextBox runat="server" ID="txtLengthOfMedia" />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div style="margin-left: 10px">
+                        <h4>Add/Edit Buttons</h4>
+                        <asp:Button runat="server" ID="btnInsertMedia" Text="Insert" Width="80px" OnClick="btnInsertMedia_Click" />
+                        <asp:Button runat="server" ID="btnUpdateMedia" Text="Update" Width="80px" OnClick="btnUpdateMedia_Click" />
+                        <asp:Button runat="server" ID="btnDeleteMedia" Text="Genre" Width="80px" OnClick="btnDeleteMedia_Click" />
+                        <asp:Button runat="server" ID="btnClearFields" Text="Clear" Width="80px" OnClick="btnClearFields_Click" />
+                    </div>
+                </div>
+                <br />
+
             </div>
         </div>
 

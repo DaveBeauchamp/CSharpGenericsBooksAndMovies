@@ -52,7 +52,7 @@ namespace BooksAndMovies
                 string colMovie = "(movieTitle, movieGenre, runTime)";
                 string queryVal = "(@t, @g, @len)";
                 string query = string.Empty;
-                var param = new { mt = title, mg = genre, len = mediaLength };
+                var param = new { t = title, g = genre, len = mediaLength };
 
                 try
                 {
