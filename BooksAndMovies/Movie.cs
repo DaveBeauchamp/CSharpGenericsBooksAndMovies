@@ -10,6 +10,6 @@ namespace BooksAndMovies
         public int MovieId { get; set; }
         public string MovieTitle { get; set; }
         public string MovieGenre { get; set; }
-        public int PageCount { get; set; }
+        public string RunTime { get; set; }
     }
 }

@@ -81,8 +81,8 @@ namespace BooksAndMovies
             using (var trans = db.BeginTransaction())
             {
                 string media = TypeHandler(mediaType);
-                string colBook = "bookTitle = @t, @bookGenre = @g, pageCount = @len WHERE bookId = @mid";
-                string colMovie = "movieTitle = @t, @movieGenre = @g, runTime = @len WHERE movieId = @mid";
+                string colBook = "bookTitle = @t, bookGenre = @g, pageCount = @len WHERE bookId = @mid";
+                string colMovie = "movieTitle = @t, movieGenre = @g, runTime = @len WHERE movieId = @mid";
                 string query = string.Empty;
                 var param = new { t = title, g = genre, len = mediaLength, mid = id };
 
@@ -110,7 +110,6 @@ namespace BooksAndMovies
         public void DeleteFromTable<T>(T mediaType, string id)
         {
             using (var db = new SQLiteConnection(GetConnection()))
-            using (var trans = db.BeginTransaction())
             {
                 string media = TypeHandler(mediaType);
                 string bookId = Constants.BookId;
@@ -128,12 +127,12 @@ namespace BooksAndMovies
                         query = $"DELETE FROM {media} WHERE {movieId} = {id}";
                     }
 
-                    db.Execute(query, null, trans);
-                    trans.Commit();
+                    db.Execute(query);
+                    
                 }
                 catch (Exception ex)
                 {
-                    trans.Rollback();
+                    
                 }
             }
         }
@@ -229,7 +228,7 @@ namespace BooksAndMovies
             }
         }
 
-        private string TypeHandler<T>(T mediaType)
+        public string TypeHandler<T>(T mediaType)
         {
             string ret = string.Empty;
             

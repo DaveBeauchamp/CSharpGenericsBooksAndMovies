@@ -96,10 +96,10 @@
                 <div class="row">
                     <div style="margin-left: 10px">
                         <h4>Add/Edit Buttons</h4>
+                        <asp:Button runat="server" ID="btnNewMedia" Text ="New" Width="80px" OnClick="btnNewMedia_Click" />
                         <asp:Button runat="server" ID="btnInsertMedia" Text="Insert" Width="80px" OnClick="btnInsertMedia_Click" />
                         <asp:Button runat="server" ID="btnUpdateMedia" Text="Update" Width="80px" OnClick="btnUpdateMedia_Click" />
-                        <asp:Button runat="server" ID="btnDeleteMedia" Text="Genre" Width="80px" OnClick="btnDeleteMedia_Click" />
-                        <asp:Button runat="server" ID="btnClearFields" Text="Clear" Width="80px" OnClick="btnClearFields_Click" />
+                        <asp:Button runat="server" ID="btnDeleteMedia" Text="Delete" Width="80px" OnClick="btnDeleteMedia_Click" />
                     </div>
                 </div>
                 <br />
