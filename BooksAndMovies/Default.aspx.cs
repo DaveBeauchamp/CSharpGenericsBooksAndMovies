@@ -24,81 +24,11 @@ namespace BooksAndMovies
             gvMovies.DataSource = db.SelectAllFromTable(movie);
             gvMovies.DataBind();
 
-
-            // finish the nav buttons, then fix the refresh grid. then basically done
-
-        }
-
-        protected void btnFirstRecord_Click(object sender, EventArgs e)
-        {
-            if (RadioSelection() == 0)
-            {
-                // do nothing
-            }
-            else 
-            {
-                if (RadioSelection() == 1)
-                {
-                    book = db.FirstRecord(book);
-                    DisplayRecord(book);
-                }
-                else
-                {
-                    movie = db.FirstRecord(movie);
-                    DisplayRecord(movie);
-                }
-                   
-            }
-        }
-
-        protected void btnPreviousRecord_Click(object sender, EventArgs e)
-        {
-            if (RadioSelection() == 0)
-            {
-                // do nothing
-            }
-            else
-            {
-                if (RadioSelection() == 1)
-                    book = db.PreviousRecord(book, txtTableId.Text);
-                else
-                    movie = db.PreviousRecord(movie, txtTableId.Text);
-            }
-        }
-
-        protected void btnNextRecord_Click(object sender, EventArgs e)
-        {
-            if (RadioSelection() == 0)
-            {
-                // do nothing
-            }
-            else
-            {
-                if (RadioSelection() == 1)
-                    book = db.NextRecord(book, txtTableId.Text);
-                else
-                    movie = db.NextRecord(movie, txtTableId.Text);
-            }
-        }
-
-        protected void btnLastRecord_Click(object sender, EventArgs e)
-        {
-            if (RadioSelection() == 0)
-            {
-                // do nothing
-            }
-            else
-            {
-                if (RadioSelection() == 1)
-                    book = db.LastRecord(book);
-                else
-                    movie = db.LastRecord(movie);
-            }
         }
 
         protected void btnInsertMedia_Click(object sender, EventArgs e)
         {
-            int radioSelect = 0;    
+            int radioSelect = 0;
             radioSelect = RadioSelection();
             if (radioSelect == 0)
             {
@@ -111,6 +41,7 @@ namespace BooksAndMovies
                 else
                     db.InsertIntoTable(movie, txtTitle.Text, txtGenre.Text, txtLengthOfMedia.Text);
             }
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnUpdateMedia_Click(object sender, EventArgs e)
@@ -128,6 +59,7 @@ namespace BooksAndMovies
                 else
                     db.UpdateTable(movie, txtTableId.Text, txtTitle.Text, txtGenre.Text, txtLengthOfMedia.Text);
             }
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnDeleteMedia_Click(object sender, EventArgs e)
@@ -145,6 +77,7 @@ namespace BooksAndMovies
                 else
                     db.DeleteFromTable(movie, txtTableId.Text);
             }
+            Response.Redirect(Request.RawUrl);
         }
 
         protected void btnNewMedia_Click(object sender, EventArgs e)
@@ -153,22 +86,8 @@ namespace BooksAndMovies
             txtTitle.Text = string.Empty;
             txtGenre.Text = string.Empty;
             txtLengthOfMedia.Text = string.Empty;
-        }
 
-        private void DisplayRecord<T>(T mediaType)
-        {
-            if (db.TypeHandler(mediaType) == Constants.Book)
-            {
-                txtBookTitle.Text = book.BookTitle;
-                txtBookGenre.Text = book.BookGenre;
-                txtPagesCount.Text = book.PageCount.ToString();
-            }
-            else
-            {
-                txtMovieTitle.Text = movie.MovieTitle;
-                txtMovieGenre.Text = movie.MovieGenre;
-                txtRunTime.Text = movie.RunTime;
-            }
+            Response.Redirect(Request.RawUrl);
         }
 
         private int RadioSelection()
@@ -198,6 +117,6 @@ namespace BooksAndMovies
             lblRunTime.Visible = true;
         }
 
-        
+
     }
 }

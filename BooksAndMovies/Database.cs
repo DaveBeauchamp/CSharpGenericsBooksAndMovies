@@ -187,6 +187,7 @@ namespace BooksAndMovies
             {
                 string tableName = TypeHandler(mediaType);
                 string recordId = tableId;
+                //string Id = string.Empty;
 
                 //if (tableName == Constants.Book)
                 //{
